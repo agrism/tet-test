@@ -15,7 +15,7 @@ http://www.tet.12a.lv/
 - run: ```npm run prod```
 - entry point ```public/index.php```
 - run: ```crontab -e```
-- add line: ```* * * * * cd /path-to-project && php artisan currency:read >> /var/log/cron.log 2>&1```
+- add line: ```0 * * * * cd /path-to-project && php artisan currency:read >> /var/log/cron.log 2>&1```
 
 
 ## Requirements
