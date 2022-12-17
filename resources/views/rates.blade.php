@@ -14,7 +14,7 @@
                     <form>
                         @include('partials.select', ['label'=>'Currency','options' => $currencies, 'key'=> 'currency'])
                         @include('partials.select', ['label'=>'Date','options' => $dates, 'key'=> 'date'])
-                        <div class="form-group col-12">
+                        <div class="form-group col-12 my-sm-3">
                             <button class="btn btn-primary">Filter</button>
                         </div>
                     </form>
@@ -39,7 +39,9 @@
                         </tbody>
 
                     </table>
-                    {{ $rates->links() }}
+                    <div class="d-flex">
+                    {!! $rates->links() !!}
+                    </div>
                 </div>
             </div>
         </div>

@@ -10,6 +10,7 @@ use App\Repositories\Eloquent\RateRepository;
 use App\Repositories\RateRepositoryInterface;
 use App\Services\CurrencyReaderInterface;
 use App\Services\LatvianBankReader;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -34,6 +35,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Paginator::useBootstrap();
     }
 }
